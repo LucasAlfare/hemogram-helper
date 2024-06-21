@@ -98,7 +98,6 @@ def convert_txts_to_info():
 def extract_patient_name(filename):
   """
   Extrai o nome do paciente a partir do nome do arquivo.
-  Exemplo: "0067191-LABRF-JOSE-SOUSA-DE-MELO_info.txt" -> "jose sousa de melo"
   """
   base_name = os.path.splitext(filename)[0]
   parts = base_name.split('-')
@@ -131,12 +130,12 @@ def process_directory(directory):
       patient_data = convert_content_to_dict(content)
       result[patient_name] = patient_data
 
-  # Salvar o resultado em um arquivo JSON
+
   with open('result.json', 'w', encoding='utf-8') as json_file:
     json.dump(result, json_file, ensure_ascii=False, indent=2)
 
 def convert_infos_to_json():
-  directory = 'infos'  # Substitua pelo caminho para os seus arquivos TXT
+  directory = 'infos'
   process_directory(directory)
 
 if __name__ == "__main__":
