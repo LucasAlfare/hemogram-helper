@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Hemogram Helper",
+  "version": "1.0",
+  "description": "helper",
+  "content_scripts": [
+    {
+      "js": [
+        "data.js",
+        "index.js"
+      ],
+      "matches": [
+        "https://renatofreire.sisvida.com.br/lancar_resultados/atendimentos/lancar/*"
+      ]
+    }
+  ]
+}
