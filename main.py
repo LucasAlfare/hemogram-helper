@@ -143,3 +143,4 @@ if __name__ == "__main__":
   convert_pdfs_to_txts()
   convert_txts_to_info()
   convert_infos_to_json()
+  print("All conversions procedures was done.")
