@@ -23,4 +23,4 @@ python txts_to_info.py
 python info_to_json.py
 ```
 6. Atualizar o Arquivo JavaScript com o Novo JSON
-- Cole o JSON resultante na constante `data` do arquivo `/my_ext/index.js`.
+- Cole o JSON resultante na constante `data` do arquivo `/my_ext/data.js`.
